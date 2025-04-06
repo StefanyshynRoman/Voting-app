@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {PollComponent} from './poll/poll.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    PollComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
