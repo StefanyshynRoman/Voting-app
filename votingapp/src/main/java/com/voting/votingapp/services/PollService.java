@@ -18,6 +18,7 @@ public class PollService {
     }
 
     public Poll createPoll(Poll poll) {
+        System.out.println("Creating poll: " + poll);
         return pollRepository.save(poll);
     }
 
